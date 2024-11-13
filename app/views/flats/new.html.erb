@@ -1,0 +1,18 @@
+<div class="container mt-5">
+  <h1 class="text-center">Add a New Flat</h1> <!-- Centré le titre -->
+
+  <%= simple_form_for @flat, html: { class: 'w-50 mx-auto bg-light p-4 rounded' } do |f| %> <!-- Formulaire avec fond gris clair et bordures arrondies -->
+    <div class="form-inputs">
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :description %>
+      <%= f.input :price_per_night %>
+      <%= f.input :number_of_guests %>
+    </div>
+
+    <div class="form-actions text-center"> <!-- Centrer les boutons -->
+      <%= f.button :submit, 'Create Flat', class: 'btn btn-primary' %>
+      <%= link_to 'Back to Flats', flats_path, class: 'btn btn-secondary' %>
+    </div>
+  <% end %>
+</div>

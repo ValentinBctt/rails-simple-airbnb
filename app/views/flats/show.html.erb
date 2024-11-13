@@ -1,0 +1,13 @@
+<div class="container mt-5">
+  <div class="card">
+    <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="<%= @flat.name %>">
+    <div class="card-body">
+      <h1 class="card-title"><%= @flat.name %></h1>
+      <p class="card-text"><%= @flat.description %></p>
+      <p><strong>Address:</strong> <%= @flat.address %></p>
+      <p><strong>Price per night:</strong> <%= @flat.price_per_night %> $</p>
+      <p><strong>Number of guests:</strong> <%= @flat.number_of_guests %></p>
+      <a href="<%= flats_path %>" class="btn btn-secondary mt-3">Back to Listings</a>
+    </div>
+  </div>
+</div>
